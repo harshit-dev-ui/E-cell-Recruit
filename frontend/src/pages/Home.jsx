@@ -26,12 +26,12 @@ export default function Home() {
 
   return (
     <div>
-      <div className="flex flex-col lg:flex-row justify-center h-screen gap-6 p-6 pl-20 pr-20 text-xl">
-        <div className="h-[24rem] w-[24rem] bg-gradient-to-br from-blue-500 to-pink-500 rounded-lg order-3 lg:order-1"></div>
-        <div className="h-[24rem] w-[24rem] bg-white rounded-lg flex items-center justify-center border border-black order-2 lg:order-2">
+      <div className="flex flex-col items-center md:grid md:grid-cols-2 md:items-start lg:flex lg:flex-row justify-center h-full gap-6 p-6 pl-20 pr-20 text-xl">
+        <div className="h-80 w-80 bg-gradient-to-br from-blue-500 to-pink-500 order-3 rounded-lg lg:order-1 lg:w-80 lg-h-80 md:w-full md:order-1 md:col-span-2 "></div>
+        <div className="h-80 w-80 bg-white rounded-lg flex items-center justify-center border border-black order-2 lg:order-2 md:col-span-1 lg:w-80 lg:h-80  ">
           <img src={Logo} alt="Logo" className="h-full w-full object-cover" />
         </div>
-        <div className="h-[24rem] w-[24rem] bg-[#D9D9D9] rounded-lg grid grid-cols-3 gap-2 p-6 shadow-inner order-1 lg:order-3">
+        <div className="h-80 w-80 bg-[#D9D9D9] rounded-lg grid grid-cols-3 gap-2 p-6 shadow-inner order-1 lg:order-3 md:order-2 md:col-span-1 lg:w-80 lg:h-80  ">
           {colors.map((color, index) => (
             <div
               key={index}

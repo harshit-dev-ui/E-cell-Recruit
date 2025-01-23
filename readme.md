@@ -21,6 +21,12 @@ _Interactive grid puzzle and E-Cell logo display_
 ![Profile Grid](frontend/public/grid.png)
 _Personal profile with Instagram integration_
 
+### Tablet Responsive Design
+
+![Tab View](frontend/public/tablet.png)
+
+_Mobile-friendly navigation and layout_
+
 ### Mobile Responsive Design
 
 ![Mobile View](frontend/public/mobile.png)

@@ -53,7 +53,7 @@ function Navbar() {
           navbarOpen ? "block" : "hidden"
         } w-full mt-0 md:mt-0 md:flex md:items-center md:justify-between md:ml-auto md:w-auto`}
       >
-        <div className="flex flex-col mt-0 md:flex-row md:gap-4">
+        <div className="flex flex-col gap-2 mt-0 md:flex-row md:gap-4">
           <button
             className="block mt-0 md:mt-0 hover:text-gray-500 transition duration-200"
             onClick={handleHomeClick}
