@@ -13,17 +13,17 @@ A responsive React application featuring interactive components and navigation.
 
 ### Home Page
 
-![Home Page](frontend\public\home.png)
+![Home Page](frontend/public/home.png)
 _Interactive grid puzzle and E-Cell logo display_
 
 ### Profile Grid
 
-![Profile Grid](frontend\public\grid.png)
+![Profile Grid](frontend/public/grid.png)
 _Personal profile with Instagram integration_
 
 ### Mobile Responsive Design
 
-![Mobile View](frontend\public\mobile.png)
+![Mobile View](frontend/public/mobile.png)
 _Mobile-friendly navigation and layout_
 
 ## Technologies Used
