@@ -1,9 +1,11 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 
 function Navbar() {
   const navigate = useNavigate();
+  const location = useLocation();
   const [navbarOpen, setNavbarOpen] = useState(false);
+  const isGridPage = location.pathname === "/grid";
 
   const handleHomeClick = () => {
     navigate("/home");
@@ -23,10 +25,13 @@ function Navbar() {
   return (
     <div
       className={`flex flex-col md:flex-row items-center px-6 py-2 text-black shadow-md transition-all duration-300`}
-      style={{ height: navbarOpen ? "140px" : "56px" }}
+      style={{
+        height: navbarOpen ? "140px" : "56px",
+        fontFamily: isGridPage ? "YourCustomFont" : "inherit",
+      }}
     >
       {/* Toggle Button */}
-      <div className="flex justify-between w-full md:hidden">
+      <div className="flex justify-end w-full md:hidden">
         <button
           className="text-black text-xl focus:outline-none"
           style={{ display: navbarOpen ? "none" : "inline" }}
@@ -35,7 +40,7 @@ function Navbar() {
           &#9776;
         </button>
         <button
-          className="text-black text-xl focus:outline-none"
+          className="text-black text-xl focus:outline-none text-bold"
           style={{ display: navbarOpen ? "inline" : "none" }}
           onClick={() => setNavbarOpen(false)}
         >

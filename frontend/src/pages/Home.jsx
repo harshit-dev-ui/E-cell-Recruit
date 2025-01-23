@@ -27,11 +27,11 @@ export default function Home() {
   return (
     <div>
       <div className="flex flex-col lg:flex-row justify-center h-screen gap-6 p-6 pl-20 pr-20 text-xl">
-        <div className="h-[24rem] w-[24rem] bg-gradient-to-br from-blue-500 to-pink-500 rounded-lg order-2 lg:order-1"></div>
-        <div className="h-[24rem] w-[24rem] bg-white rounded-lg flex items-center justify-center border border-black order-1 lg:order-2">
+        <div className="h-[24rem] w-[24rem] bg-gradient-to-br from-blue-500 to-pink-500 rounded-lg order-3 lg:order-1"></div>
+        <div className="h-[24rem] w-[24rem] bg-white rounded-lg flex items-center justify-center border border-black order-2 lg:order-2">
           <img src={Logo} alt="Logo" className="h-full w-full object-cover" />
         </div>
-        <div className="h-[24rem] w-[24rem] bg-[#D9D9D9] rounded-lg grid grid-cols-3 gap-2 p-6 shadow-inner order-3 lg:order-3">
+        <div className="h-[24rem] w-[24rem] bg-[#D9D9D9] rounded-lg grid grid-cols-3 gap-2 p-6 shadow-inner order-1 lg:order-3">
           {colors.map((color, index) => (
             <div
               key={index}
