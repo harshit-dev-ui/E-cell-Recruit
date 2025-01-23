@@ -24,6 +24,7 @@ _Personal profile with Instagram integration_
 ### Mobile Responsive Design
 
 ![Mobile View](frontend/public/mobile.png)
+
 _Mobile-friendly navigation and layout_
 
 ## Technologies Used
